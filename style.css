@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --title-color: black;
+    --text-color: white;
+    --bd-color: rgba(0, 0, 0, 0.6);
+    --bg-color: rgb(255, 255, 255);
+    --dc-color: rgba(137, 207, 240, .85)
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(profile.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    backdrop-filter: blur(2vh);
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(100% - 100px);
+    min-height: calc(100vh - 100px);
+    padding: 15px;
+}
+main i{
+    color: var(--dc-color);
+}
+.profile-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2.5px solid var(--bd-color);
+    object-fit: cover;
+}
+.profile-name{
+    margin-top: 10px;
+    font-size: 32px;
+    color: var(--text-color);
+}
+.discord{
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text-color);
+}
+.portal-link {
+    margin-top: 40px;
+    list-style: none;
+}
+.portal-link > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 45px;
+    margin-bottom: 25px;
+    border: 3.5px solid var(--bd-color);
+    box-shadow: 5px 5px var(--bd-color);
+    cursor: pointer;
+    transition: all .5s;
+}
+.portal-link > li:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+}
+.portal-link > li:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.89)
+}
+.portal-link > li:nth-child(3) {
+    background-color: rgba(255, 255, 255,1);
+}
+.portal-link > li:nth-child(4) {
+    background-color: rgba(255, 255, 255,1);
+}
+.portal-link > li > a {
+    text-decoration: none;
+    color: var(--title-color);
+    font-weight: 350;
+    font-size: 20px;
+}
+
+.portal-link > li:hover {
+    transform: translate(-5px, -5px);
+}
+
+@media screen and (max-width: 500px) {
+
+ .portal-link {
+    width: 100%;
+ }
+
+ .portal-link > li {
+    width: 100%;
+
+ }
+
+}
